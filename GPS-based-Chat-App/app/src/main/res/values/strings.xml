@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">GPS-based-Chat-App</string>
+    <string name="app_name">GPS Chat</string>
     <string name="action_settings">Settings</string>
+
+    <string name="button_map">Message Map</string>
+    <string name="button_textView">Text View</string>
 </resources>

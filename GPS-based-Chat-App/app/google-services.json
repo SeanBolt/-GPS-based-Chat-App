@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1043990261710",
+    "firebase_url": "https://gps-chat-app.firebaseio.com",
+    "project_id": "gps-chat-app",
+    "storage_bucket": "gps-chat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043990261710:android:db71af30cab2461c",
+        "android_client_info": {
+          "package_name": "sean.bolton.io.gps_based_chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043990261710-cbknpj1jon8rheivloua97imjccpp6ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoCy666WrT8xsXjbJywBeaNnF4RHKcupE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
