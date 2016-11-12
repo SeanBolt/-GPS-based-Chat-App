@@ -4,13 +4,14 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:hint="@string/hint_sendMessage"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/editText_sendMessage"
         android:gravity="top"
         android:paddingTop="@dimen/fab_margin"
         android:layout_weight="0.49" />
@@ -19,6 +20,6 @@
         android:text="@string/button_sendMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/button_sendMessage"
         android:layout_weight="0.03" />
 </LinearLayout>
