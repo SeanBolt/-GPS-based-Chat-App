@@ -28,6 +28,10 @@
             android:name=".CreateMessageActivity"
             android:label="Create a Message">
         </activity>
+        <activity
+            android:name=".ViewMessagesActivity"
+            android:label="My Messages">
+        </activity>
     </application>
 
 </manifest>

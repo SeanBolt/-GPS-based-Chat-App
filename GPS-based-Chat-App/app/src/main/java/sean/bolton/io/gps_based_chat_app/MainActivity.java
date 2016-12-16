@@ -30,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, CreateMessageActivity.class));
             }
         });
+
+        Button viewMessagesButton = (Button) findViewById(R.id.button_textView);
+        viewMessagesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ViewMessagesActivity.class));
+            }
+        });
     }
 
     @Override
