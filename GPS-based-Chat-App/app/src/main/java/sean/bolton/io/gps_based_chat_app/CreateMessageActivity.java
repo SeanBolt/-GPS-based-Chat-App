@@ -69,9 +69,9 @@ public class CreateMessageActivity extends AppCompatActivity implements android.
 //            Log.e("GPS", "exception occured " + e.getMessage());
 //        }
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("messages");
+        DatabaseReference myRef = database.getReference("ChatMessage");
         ChatMessage data = new ChatMessage(53.23, -9.81, this.textField.getText().toString());
-        myRef.push().setValue(data);
+        myRef.child("messages").push().setValue(data);
 
     }
 
