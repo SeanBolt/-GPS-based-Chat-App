@@ -24,10 +24,15 @@ public class MainActivity extends AppCompatActivity {
         newMessageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO: Segue to Create Message Activity
-
-
                 startActivity(new Intent(MainActivity.this, CreateMessageActivity.class));
+            }
+        });
+
+        Button messageMapButton = (Button) findViewById(R.id.button_map);
+        messageMapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MessageMapActivity.class));
             }
         });
 

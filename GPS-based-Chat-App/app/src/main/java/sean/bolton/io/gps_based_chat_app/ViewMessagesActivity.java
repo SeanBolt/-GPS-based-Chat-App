@@ -45,6 +45,7 @@ public class ViewMessagesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setTitle("Loading...");
         setContentView(R.layout.activity_viewmessages);
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mDatabase.addListenerForSingleValueEvent(messageListener);
@@ -56,6 +57,8 @@ public class ViewMessagesActivity extends AppCompatActivity {
     protected void setupTable() {
         final TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
         int count = 0;
+
+        // Programmatically create a table row for each message
         for (ChatMessage message : this.chatMessageList) {
 
             TableRow row = new TableRow(this);
@@ -80,7 +83,7 @@ public class ViewMessagesActivity extends AppCompatActivity {
             tableLayout.addView(row, count);
             count++;
         }
-
+        this.setTitle("My Messages");
     }
 
     ValueEventListener messageListener = new ValueEventListener() {
